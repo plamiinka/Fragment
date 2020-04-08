@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <EditText
+            android:id="@+id/imageEdit"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="2dp" />
+
+        <EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/imageEdit"
+            android:layout_toRightOf="@id/imageEdit"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <EditText
+            android:id="@+id/addressEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/nameEdit"
+            android:layout_toRightOf="@id/nameEdit"
+            android:text="@string/address"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/addressEdit"
+            android:layout_toRightOf="@id/addressEdit"
+            android:text="@string/add"
+            android:textSize="20sp"            />
+
+    </RelativeLayout>
+
+</FrameLayout>
